@@ -3,79 +3,150 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>24/7 Water Damage Cleanup | Fast Local Pros</title>
-  <meta name="description" content="Emergency water damage cleanup in your area. 24/7 dispatch. Licensed & insured local pros.">
+  <title>24/7 Water • Sewage • Fire/Smoke • Mold | Fast Damage Repairs</title>
+  <meta name="description" content="Emergency mitigation: water & sewage cleanup, fire/smoke damage, and mold remediation. Local pros, 24/7 dispatch.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; color:#0f172a; background:#f8fafc; }
-    .hero { background:white; padding:24px; border-bottom:1px solid #e5e7eb; }
-    .wrap { max-width:980px; margin:0 auto; }
-    h1 { font-size: 2.2rem; margin: 0.2rem 0 0.6rem; }
-    .badge { display:inline-block; background:#ecfeff; color:#0369a1; padding:6px 10px; border-radius:999px; font-weight:600; font-size:0.9rem; }
-    .cta { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin:16px 0 0; }
-    .callbtn { background:#16a34a; color:white; padding:14px 18px; border:none; border-radius:12px; font-weight:700; font-size:1.05rem; text-decoration:none; }
-    .callbtn:hover { filter:brightness(0.95); }
-    .infocard { background:white; border:1px solid #e5e7eb; border-radius:16px; padding:18px; }
-    .grid { display:grid; grid-template-columns: 1fr 1fr; gap:18px; margin-top:18px; }
-    @media (max-width: 780px) { .grid { grid-template-columns: 1fr; } }
-    ul { margin-top:8px; }
-    footer { font-size:0.85rem; color:#475569; padding:26px 0 40px; }
-    .legal { font-size:0.8rem; color:#64748b; }
-    .note { background:#fffbeb; border:1px solid #fde68a; padding:10px 12px; border-radius:12px; }
+    :root{--bg:#f8fafc;--card:#ffffff;--ink:#0f172a;--muted:#475569;--line:#e5e7eb;--brand:#1d4ed8;--ok:#16a34a;}
+    *{box-sizing:border-box} body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;color:var(--ink);background:var(--bg)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{background:var(--card);border-bottom:1px solid var(--line);padding:22px 0}
+    h1{font-size:2.2rem;margin:.2rem 0 .6rem}
+    .pill{display:inline-block;background:#ecfeff;color:#0369a1;padding:6px 10px;border-radius:999px;font-weight:700;font-size:.9rem}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 0}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:var(--ok);color:#fff;font-weight:800;border:none;border-radius:12px;padding:14px 18px;text-decoration:none}
+    .btn.sec{background:var(--brand)}
+    .grid{display:grid;gap:18px}
+    .cards{grid-template-columns:repeat(4,1fr)}
+    @media (max-width: 1000px){.cards{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width: 620px){.cards{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .twocol{grid-template-columns:1fr 1fr}
+    @media (max-width: 900px){.twocol{grid-template-columns:1fr}}
+    .note{background:#fffbeb;border:1px solid #fde68a;padding:10px 12px;border-radius:12px}
+    .muted{color:var(--muted)}
+    footer{font-size:.85rem;color:var(--muted);padding:26px 0 40px}
+    input,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line)}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+    @media (max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}}
+    .kpi{background:#eef2ff;border:1px solid #c7d2fe;border-radius:12px;padding:12px;text-align:center}
+    .kpi b{display:block;font-size:1.4rem}
+    .faq h3{margin:12px 0 6px}
+    .legal{font-size:.8rem;color:#64748b}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Fast Damage Repairs",
+    "areaServed": ["Tampa, FL", "St. Petersburg, FL", "Clearwater, FL", "Raleigh, NC", "Durham, NC", "Chapel Hill, NC"],
+    "serviceType": ["Water Damage Mitigation","Sewage Cleanup","Fire and Smoke Damage Cleanup","Mold Remediation"],
+    "availableChannel": {"@type":"ServiceChannel","servicePhone":{"@type":"ContactPoint","telephone":"+1-555-555-0134"}}
+  }
+  </script>
 </head>
 <body>
-  <header class="hero">
-    <div class="wrap">
-      <span class="badge">24/7 Emergency Dispatch</span>
-      <h1>Water Damage Cleanup • Dry‑Out • Mold Prevention</h1>
-      <p>Fast response. Local, vetted pros. We connect you immediately.</p>
-      <div class="cta">
-        <!-- Replace with your Twilio tracking phone number -->
-        <a class="callbtn" href="tel:+1-555-555-0134">📞 Call Now (Fastest)</a>
-        <a class="callbtn" style="background:#1d4ed8" href="#form">Request a Callback</a>
-      </div>
+<header>
+  <div class="wrap">
+    <span class="pill">24/7 Emergency Dispatch</span>
+    <h1>Water • Sewage • Fire/Smoke • Mold</h1>
+    <p class="muted">Local, vetted pros. We connect you immediately.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+1-555-555-0134">📞 Call Now (Fastest)</a>
+      <a class="btn sec" href="#form">Request a Callback</a>
     </div>
-  </header>
-
-  <main class="wrap" style="padding:22px;">
-    <div class="grid">
-      <section class="infocard">
-        <h2>What We Handle</h2>
-        <ul>
-          <li>Burst pipes, appliance leaks, storm/flood damage</li>
-          <li>Water extraction, structural dry‑out, dehumidification</li>
-          <li>Mold prevention & inspections</li>
-          <li>Insurance‑friendly documentation</li>
-        </ul>
-        <div class="note" style="margin-top:12px;">
-          <strong>Fast track:</strong> Calling routes you to the nearest available pro.
-        </div>
-      </section>
-      <section id="form" class="infocard">
-        <h2>Prefer a callback?</h2>
-        <!-- Simple HTML form posts to a webhook (Make/Zapier) -->
-        <form method="post" action="https://hook.example.com/water-damage-intake">
-          <label>Full name<br><input name="name" required placeholder="Jane Smith" style="width:100%;padding:10px;border-radius:10px;border:1px solid #e5e7eb;"></label><br><br>
-          <label>Phone<br><input name="phone" required placeholder="(555) 555‑0123" style="width:100%;padding:10px;border-radius:10px;border:1px solid #e5e7eb;"></label><br><br>
-          <label>Address (for ETA)<br><input name="address" placeholder="123 Main St, City" style="width:100%;padding:10px;border-radius:10px;border:1px solid #e5e7eb;"></label><br><br>
-          <label>Describe the issue<br><textarea name="details" rows="4" placeholder="Where is the water, how long, source known?" style="width:100%;padding:10px;border-radius:10px;border:1px solid #e5e7eb;"></textarea></label><br><br>
-          <button type="submit" style="background:#1d4ed8;color:white;padding:12px 16px;border:none;border-radius:12px;font-weight:700;">Request Callback</button>
-        </form>
-        <p class="legal" style="margin-top:10px;">By submitting, you agree to be contacted about your service request. Calls may be recorded for quality and verification.</p>
-      </section>
+    <div class="kpis">
+      <div class="kpi"><b>24/7</b> Live routing</div>
+      <div class="kpi"><b>~2–5 min</b> Typical connect</div>
+      <div class="kpi"><b>Licensed</b> & insured pros</div>
+      <div class="kpi"><b>Insurance</b> friendly docs</div>
     </div>
-    <section style="margin-top:24px;">
-      <div class="legal">
-        <p><strong>Disclaimer:</strong> We connect customers to independent local contractors. Availability varies by location. Calls may be recorded. If this is a hazardous situation, call emergency services.</p>
-      </div>
-    </section>
-  </main>
+  </div>
+</header>
 
-  <footer class="wrap">
-    <div>© 2025 Fast Local Pros</div>
-  </footer>
+<main class="wrap" style="padding:22px 0 0">
+  <section class="grid cards">
+    <div class="card">
+      <h2>Water Damage</h2>
+      <ul>
+        <li>Burst pipes, leaks, storm/flood</li>
+        <li>Extraction, dry-out, dehumidification</li>
+        <li>Structural moisture checks</li>
+        <li>Mold prevention</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Sewage Cleanup</h2>
+      <ul>
+        <li>Category 3 (black water)</li>
+        <li>Sanitization & haul-away</li>
+        <li>Contaminated material removal</li>
+        <li>Odor control</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Fire & Smoke</h2>
+      <ul>
+        <li>Board-up & tarp</li>
+        <li>Soot/smoke cleanup</li>
+        <li>Deodorization & HEPA</li>
+        <li>Content cleaning</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Mold Remediation</h2>
+      <ul>
+        <li>Assessment & containment</li>
+        <li>Filtration & removal</li>
+        <li>Antimicrobial treatment</li>
+        <li>Clearance testing (3rd party)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="grid twocol" style="margin-top:18px">
+    <div class="card">
+      <h2>Prefer a callback?</h2>
+      <form id="form" method="post" action="https://hook.example.com/fast-damage-intake">
+        <label>Full name<br><input name="name" required placeholder="Jane Smith"></label><br><br>
+        <label>Phone<br><input name="phone" required placeholder="(555) 555-0123"></label><br><br>
+        <label>Address (for ETA)<br><input name="address" placeholder="123 Main St, City"></label><br><br>
+        <label>What happened?<br><textarea name="details" rows="4" placeholder="Water/sewage/fire/smoke/mold — where, when, source?"></textarea></label><br><br>
+        <button type="submit" class="btn sec">Request Callback</button>
+      </form>
+      <p class="legal" style="margin-top:10px;">By submitting, you agree to be contacted about your service request. Calls may be recorded for quality and verification.</p>
+    </div>
+    <div class="card">
+      <h2>Service Areas</h2>
+      <p><strong>Tampa–St. Petersburg–Clearwater, FL</strong> • ZIPs 336xx, 337xx, 346xx</p>
+      <p><strong>Raleigh–Durham–Chapel Hill, NC</strong> • ZIPs 275xx–277xx</p>
+      <div class="note"><strong>Fast track:</strong> Calling routes you to the nearest available pro.</div>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:18px">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <h3>Do you handle insurance?</h3>
+      <p class="muted">Yes — pros can document damages for your claim and coordinate with adjusters.</p>
+      <h3>Is sewage cleanup safe?</h3>
+      <p class="muted">Category 3 water requires protective protocols and sanitization. Pros follow IICRC standards.</p>
+      <h3>How fast can someone come?</h3>
+      <p class="muted">Often within hours. Call for the quickest response.</p>
+    </div>
+  </section>
+
+  <section style="margin-top:18px">
+    <div class="legal">
+      <p><strong>Disclaimer:</strong> We connect customers to independent local contractors. Availability varies by location. Calls may be recorded. If this is hazardous, call emergency services.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div>© 2025 Fast Damage Repairs</div>
+</footer>
 </body>
 </html>
